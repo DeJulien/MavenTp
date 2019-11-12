@@ -19,6 +19,26 @@
 	<junit.version>4.11</junit.version>
 	<mode>DEV</mode>
   </properties>
+  
+	<profiles>
+	     <profile>
+	            <id>dev</id>
+	            <activation>
+	                   <activeByDefault>true</activeByDefault>
+	            </activation>
+	            <properties>
+	                     <mode>DEV</mode>
+	             </properties>
+	   </profile>
+	   <profile>
+	            <id>prod</id>
+	            <properties>
+	                     <mode>PROD</mode>
+	            </properties>
+	   </profile>
+	
+	</profiles>
+
 
   <dependencies>
     <dependency>
